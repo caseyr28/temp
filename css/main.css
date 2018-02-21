@@ -245,8 +245,12 @@ p{
 	width: 100%;
 	display: block;
 	position: relative;
-  	/*cursor: url(../img/gallery-cursor.png), auto;*/
 
+
+}
+
+.larger {
+	cursor: url(../img/gallery-cursor.png), auto;
 }
 
 .hidden{
