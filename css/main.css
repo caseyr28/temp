@@ -7,6 +7,10 @@ html{
 
 }
 
+img{
+	width: 100%;
+}
+
 
 a{
 	text-decoration: none;
@@ -191,7 +195,7 @@ p{
 }
 .featured img{
 	margin-left: -190px;
-	max-width: 100%;
+	width: 1200px;
 }
 
 .proj-list{
@@ -235,15 +239,13 @@ p{
 	margin-bottom: 60px;
 }
 
-.project img{
-	width: 100%;
-}
+
 
 .gallery img{
 	width: 100%;
 	display: block;
 	position: relative;
-  	cursor: url(../img/gallery-cursor.png), auto;
+  	/*cursor: url(../img/gallery-cursor.png), auto;*/
 
 }
 
