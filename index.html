@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+	<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+	<title>Cultivator Advertising & Design</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+<!--link to modal styles-->	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+
+<!--libraries-->
+	<!--jquery-->
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous">  	
+	</script>
+	<!--modal library-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+	  <!-- smooth scroll behavior polyfill -->
+  	<script src="js/dist/smoothscroll.min.js"></script>
+</head>
+
+<body>
+	<main>
+		<header>
+			<div class="badge">
+				<img class="logo" src="img/CultWheel.svg" alt="logo">
+				<a class="about-btn" href="#about">ABOUT</a>
+				<a class="contact-btn" href="#contact">CONTACT</a>
+				<p>established mm | denver, colorado usa</p>				
+			</div>
+			<div class="tape">
+				<img src="img/tape.png" alt="tape">
+			</div>
+		</header>
+		<section class="hero">
+			<div class="featured">
+				<img src="img/NBB.jpg" alt="New Belgium Brewing six pack design">
+				<div class="hero-title"><h1 class="title">New Belgium Brewing</h1></div>
+				<p>Branding • Marketing • Strategy • Packaging</p>	
+
+			</div>
+		</section>
+		<!--projects listing-->
+		<section class="proj-list">
+			<div class="project gallery">
+					<div class="gallery-indicator"><img src="img/gallery-icon.svg" alt="This is a gallery."></div>
+
+				    <a data-fancybox="image" href="https://www.youtube.com/embed/tKVWVBu_42s?rel=0&fs=1&autoplay=0" data-type="iframe"><img class="gallery-thumb" src="img/proj-1/1.jpg"></a>
+
+				    <div class="hidden">
+				    	<a data-fancybox="image" href="img/ConceivedAd.jpg"></a>
+				    	<a data-fancybox="image" href="img/fat-tire-6-2.jpg"></a>
+				    	<a data-fancybox="image" href="img/SaveOurRiversAd.jpg"></a>				    					    	
+				    </div>
+
+				<h2>Project title goes here</h2>
+				<p>Branding • Marketing • Strategy • Packaging</p>	
+			</div>
+			<div class="project">
+				<img src="img/oboz-hero.jpg">
+				<h2>Project title goes here</h2>
+				<p>Branding • Marketing • Strategy • Packaging</p>					
+			</div>
+			<div class="project">
+				<img src="img/oboz-hero.jpg">
+				<h2>Project title goes here</h2>
+				<p>Branding • Marketing • Strategy • Packaging</p>					
+			</div>
+			<div class="project">
+				<img src="img/oboz-hero.jpg">
+				<h2>Project title goes here</h2>
+				<p>Branding • Marketing • Strategy • Packaging</p>	
+			</div>
+			<div class="project">
+				<img src="img/oboz-hero.jpg">
+				<h2>Project title goes here</h2>
+				<p>Branding • Marketing • Strategy • Packaging</p>					
+			</div>
+			<div class="project">
+				<img src="img/oboz-hero.jpg">
+				<h2>Project title goes here</h2>
+				<p>Branding • Marketing • Strategy • Packaging</p>					
+			</div>
+			<div class="project">
+				<img src="img/oboz-hero.jpg">
+				<h2>Project title goes here</h2>
+				<p>Branding • Marketing • Strategy • Packaging</p>	
+			</div>
+			<div class="project">
+				<img src="img/oboz-hero.jpg">
+				<h2>Project title goes here</h2>
+				<p>Branding • Marketing • Strategy • Packaging</p>					
+			</div>
+			<!--end projects-->
+			<!--<div class="mobile-bg">	</div>-->
+				<div class="background"></div>
+			
+		</section>
+		<section id="about">
+			<div class="about-text">				
+				<h3>Cultivator is an agency focused on craft. We help small brands grow. And help large brands remain authentic.
+				</h3>	
+			</div>			
+		</section>
+		<section id="contact">
+			<div class="contact-text">
+				<h4>We're a team of designers, strategists and builders who believe in the power of craft.
+				</h4>
+				<h5>Want to talk? Looking for a job? Send us an email at: <a href="mailto:info@cultivatorads.com">info@cultivatorads.com</a></h5>			
+			</div>
+			<div class="location-text">
+				<h6>Cultivator Advertising & Design<br>
+				2737 Larimer St, Suite B<br>
+				Denver, CO 80205<br>
+				<a href="tel:303-444-4134">(303) 444-4134</a>
+				</h6>
+			</div>
+			<div class="footer"><p>©2018 Cultivator Advertising & Design. All Rights reserved.</p></div>
+
+		</section>
+	</main>
+</body>
+
+<script type="text/javascript">
+	// Select all links with hashes
+	$('a[href*="#"]')
+	  // Remove links that don't actually link to anything
+	  .not('[href="#"]')
+	  .not('[href="#0"]')
+	  .click(function(event) {
+	    // On-page links
+	    if (
+	      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+	      && 
+	      location.hostname == this.hostname
+	    ) {
+	      // Figure out element to scroll to
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	      // Does a scroll target exist?
+	      if (target.length) {
+	        // Only prevent default if animation is actually gonna happen
+	        event.preventDefault();
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000, function() {
+	          // Callback after animation
+	          // Must change focus!
+	          var $target = $(target);
+	          $target.focus();
+	          if ($target.is(":focus")) { // Checking if the target was focused
+	            return false;
+	          } else {
+	            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+	            $target.focus(); // Set focus again
+	          };
+	        });
+	      }
+	    }
+	  });
+</script>
+
+
+</html>
