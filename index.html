@@ -10,6 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+	<!--element-animation styles-->
+	<link rel="stylesheet" href="js/aos/aos.css" />
 
 	<!--link to modal styles-->	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
@@ -32,6 +34,9 @@
 	<!--video-popup lib-->
 	<script type="text/javascript" src="js/dist/lity.min.js"></script>
 
+	<!--element animation lib-->
+	 <script src="js/aos/aos.js"></script>
+
 </head>
 
 <body>
@@ -49,15 +54,16 @@
 		</header>
 		<section class="hero">
 			<div class="featured">
-				<img src="img/NBB.jpg" alt="New Belgium Brewing six pack design">
-				<div class="hero-title"><h1 class="title">New Belgium Brewing</h1></div>
-				<p>Branding • Marketing • Strategy • Packaging</p>	
+				<img src="img/NBB.jpg" alt="New Belgium Brewing six pack design" data-aos="fade-up" data-aos-delay="300">
+				<div class="hero-title" data-aos="fade-up" data-aos-delay="300"><h1 class="title">New Belgium Brewing</h1>
+				<p>Branding • Marketing • Strategy • Packaging</p>
+				</div>
 
 			</div>
 		</section>
 		<!--projects listing-->
 		<section class="proj-list">
-			<div class="project gallery">
+			<div class="project gallery" data-aos="zoom-out-up">
 
 				<div class="slider">
 					<a href="img/SaveOurRiversAd.jpg" data-lity><img class="larger" src="img/proj-1/1.jpg" ></a>
@@ -81,37 +87,37 @@
 				<h2>Project title goes here</h2>
 				<p>Branding • Marketing • Strategy • Packaging</p>	
 			</div>
-			<div class="project">
+			<div class="project" data-aos="zoom-out-up" data-aos-delay="300">
 				<img src="img/oboz-hero.jpg">
 				<h2>Project title goes here</h2>
 				<p>Branding • Marketing • Strategy • Packaging</p>					
 			</div>
-			<div class="project">
+			<div class="project" data-aos="zoom-out-up" data-aos-delay="500">
 				<img src="img/oboz-hero.jpg">
 				<h2>Project title goes here</h2>
 				<p>Branding • Marketing • Strategy • Packaging</p>					
 			</div>
-			<div class="project">
+			<div class="project" data-aos="zoom-out-up" data-aos-delay="400">
 				<img src="img/oboz-hero.jpg">
 				<h2>Project title goes here</h2>
 				<p>Branding • Marketing • Strategy • Packaging</p>	
 			</div>
-			<div class="project">
+			<div class="project" data-aos="zoom-out-up" data-aos-delay="200">
 				<img src="img/oboz-hero.jpg">
 				<h2>Project title goes here</h2>
 				<p>Branding • Marketing • Strategy • Packaging</p>					
 			</div>
-			<div class="project">
+			<div class="project" data-aos="zoom-out-up" data-aos-delay="500">
 				<img src="img/oboz-hero.jpg">
 				<h2>Project title goes here</h2>
 				<p>Branding • Marketing • Strategy • Packaging</p>					
 			</div>
-			<div class="project">
+			<div class="project" data-aos="zoom-out-up" data-aos-delay="300">
 				<img src="img/oboz-hero.jpg">
 				<h2>Project title goes here</h2>
 				<p>Branding • Marketing • Strategy • Packaging</p>	
 			</div>
-			<div class="project">
+			<div class="project" data-aos="zoom-out-up" data-aos-delay="200">
 				<img src="img/oboz-hero.jpg">
 				<h2>Project title goes here</h2>
 				<p>Branding • Marketing • Strategy • Packaging</p>					
@@ -122,18 +128,18 @@
 			
 		</section>
 		<section id="about">
-			<div class="about-text">				
+			<div class="about-text" data-aos="fade-up" data-aos-delay="300">				
 				<h3>Cultivator is an agency focused on craft. We help small brands grow. And help large brands remain authentic.
 				</h3>	
 			</div>			
 		</section>
 		<section id="contact">
-			<div class="contact-text">
+			<div class="contact-text" data-aos="fade-up" data-aos-delay="300">
 				<h4>We're a team of designers, strategists and builders who believe in the power of craft.
 				</h4>
 				<h5>Want to talk? Looking for a job? Send us an email at: <a href="mailto:info@cultivatorads.com">info@cultivatorads.com</a></h5>			
 			</div>
-			<div class="location-text">
+			<div class="location-text" data-aos="fade-up" data-aos-delay="300">
 				<h6>Cultivator Advertising & Design<br>
 				2737 Larimer St, Suite B<br>
 				Denver, CO 80205<br>
@@ -206,6 +212,12 @@
 			}
 	});
 
+</script>
+
+<script>
+   AOS.init({
+      easing: 'ease-in-out-sine'
+   });
 </script>
 
 
